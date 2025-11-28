@@ -1,0 +1,86 @@
+.headers {
+    display: flex;
+    padding: 1rem;
+    background-color: rgb(7, 33, 57);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-left: 0.9rem;
+}
+.idProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    
+}
+.idProfile div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.idProfile div  h1{
+    color: white ;
+    font-weight: bolder;
+    word-break: break-word;
+}
+
+.idProfile div  p{
+    width: 45%;
+    word-wrap: break-word;
+    font-weight: 100;
+    color: rgb(212, 212, 212);
+    line-height: 1.5rem;
+}
+.descripHeader {
+    width: 90%;
+    line-break: auto;
+    font-weight: 100;
+    color: rgb(212, 212, 212);
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+.profileImage {
+    border: solid white 0.1rem ;
+    border-radius: 5px;
+}
+.profileImageOff { display: none; }
+
+/* Tablette */
+@media screen and (min-width: 43rem) 
+{
+    .headers { padding-top: 1rem; }
+    .idProfile {
+        flex-direction: row;
+        align-items: safe center;
+    }
+    .idProfile div  h1{ font-size: 2rem; }
+    .idProfile div  p{
+        width: 100%; 
+        font-size: 1.4rem        
+    }
+    .descripHeader { width: 70%; }
+    .profileImage {
+        width: 25rem;
+        height: auto;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 64rem) {
+    .headers { padding: 5rem; }
+    .container { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .idProfile div  h1{ font-size: 2.5rem; }
+    .descripHeader {
+        width: 45%;  
+        font-size: larger;       
+    }
+}

@@ -1,0 +1,155 @@
+.mains {
+    background-color: rgb(245, 245, 245);
+    padding-top: 1rem;
+}
+
+.apropos {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: rgb(7, 33, 57);
+}
+
+.apropos p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: rgb(7, 33, 57);
+    font-weight: 100;
+    line-height: 1.5rem;
+    word-break: break-word;
+}
+
+.apropos a {
+    text-decoration: none;
+    background-color: rgb(7, 33, 57);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: small;
+    transition: 0.3s ease-out;
+}
+.apropos a:hover { opacity: 0.8; }
+
+.projet {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.projetBloc {
+    background-color: white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px 10px rgb(247, 249, 252);
+}
+
+.projetBloc p {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    color: rgb(7, 33, 57);
+}
+
+.projetBloc p i {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projetBloc p i span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.7rem;
+    background-color: rgb(245, 245, 245);
+    font-weight: 100;
+    font-size: small;
+    border-radius: 5px;
+}
+.projetBloc p i span a {
+    text-decoration: none;
+    color: rgb(7, 33, 57);
+    
+}
+.voirPlus {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: rgb(7, 33, 57);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 100;
+    font-size: small;
+    transition: 0.3s ease-out;
+}
+
+.voirPlus:hover { opacity: 0.8; }
+
+.competenceContact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(7, 33, 57);
+    color: white;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    margin-top: 1rem;
+}
+.competences span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: rgb(245, 245, 245);
+    color: rgb(7, 33, 57);
+    padding: 0.5rem 0.7rem;
+    border-radius: 7px;
+    font-weight: 100;
+    font-size: small;
+}
+.outils {
+    margin-top: 2rem;
+}
+
+
+/* Tablette */
+@media screen and (min-width: 43rem) 
+{
+    .mains section, .competenceContact {
+        display: flex;
+        flex-direction: row;;
+        margin-top: 1rem;
+    }
+     .apropos { width: 60%; }
+    .competenceContact div{ width: 100%; }
+    .competenceContact div:first-child{
+        display: flex;
+        flex-wrap: wrap;
+        align-self: start;
+        justify-content: space-between;
+    }
+    .projet { margin-top: 0rem; }
+}
+
+/* Desktop */
+@media screen and (min-width: 64rem) {
+    .mains section, .competenceContact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .apropos {
+        width: 60%;
+    }
+    .projetBloc p i{
+        padding-left: 2rem;
+    }
+}
