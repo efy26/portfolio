@@ -31,7 +31,7 @@ export default function Accueil() {
             à des projets concrets tout en continuant à développer mes
             compétences.
           </p>
-          <a href="/path/to/cv.pdf" download>
+          <a href='/CV_Efoya_Likonga_Eliezer.docx' download>
             Télécharger mon CV
           </a>
         </div>
